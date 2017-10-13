@@ -1,7 +1,7 @@
 VM-WARE Interview question:
 Total question 19
-Solution 17
-No-Resolved 2
+Solution 15
+No-Resolved 4
 
 
 
@@ -32,16 +32,9 @@ def check_connectivity(ip_addr):
             print("Error Message: {}".format(data_stderr))
         print("Unable to ping {}".format(ip_addr))
 
-
-
-
 if __name__ ==  "__main__"    :
     machine=input("Enter the machine details for ping: ")
     check_connectivity(machine)
-
-
-    
-
 
 
 2. How we create modules in python.
@@ -82,7 +75,7 @@ Answer:
 
 6. Some coding on question on map, filter, reduce and lamdba expressions
 
-
+Answer:   NR
 
 
 
@@ -298,14 +291,15 @@ for i in fib_series:
 
 
 14. Context managers, how they work, __entry__ and __exit__
-
+Answer: NR
 
 
 
 15. [1,,0,1,1,1,1,0,0,1,1,1] find the max sum of subsequence by flipping one 0 to 1 at a time.
+Answer: NR
 
 16. write code for Recursive directory traversal without os.walk.
-    os.walk() function takes input as a path and return the 3 value in tuple format   current_directoryname, current_directory's_available_dir_name, current_directory_available_file in the tuple format recurssively.
+Answer:    os.walk() function takes input as a path and return the 3 value in tuple format   current_directoryname, current_directory's_available_dir_name, current_directory_available_file in the tuple format recurssively.
     
 devi@devi-Vostro-1540:~/hw$ cat ./example.py 
 #!/usr/bin/python3
@@ -355,7 +349,7 @@ devi@devi-Vostro-1540:~/hw$
 
 
 18. 12 ball with 1 defective, how many min iterations required to find it.
-
+Answer: NR
 
 
 
