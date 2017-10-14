@@ -184,7 +184,7 @@ Answer:
 12. Write a class whose objects are iterable
 Answer:
 
-class iterator():
+class my_iterator():
     def __init__(self,limit):
         self.data=[i for i in range(limit)]
         self.count=0
@@ -195,14 +195,14 @@ class iterator():
             return return_value
         else:
             raise StopIteration("Out of index value")
-
+    def __iter__(self):
+      return self
 try:
-  obj=iterator(10)
-  for i in range(12):
-       print(next(obj))
+  obj=my_iterator(10)
+  for i in obj:
+       print(i)
 except Exception as e:
     print(e)
-
 
 output:
 Python 3.6.1 (default, Dec 2015, 13:05:11)
@@ -218,7 +218,6 @@ Python 3.6.1 (default, Dec 2015, 13:05:11)
 7
 8
 9
-Out of index value
    
 
 
