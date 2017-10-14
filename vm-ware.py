@@ -68,10 +68,9 @@ import A
 import A
 
 Answer:
-	Output will be only "Hello" one time only. Its maintain the list of imported module. so second time its ignore the import module if its already imported
+	Output will be only "Hello" one time only. Python maintains a dictionary named 'sys.modules' which is looked upon each time we do import of a module, if the module name as a 'key' already exists in the modules dictionary all the new imports is/are igonred as duplicate. 
 
-
-
+	
 
 6. Some coding on question on map, filter, reduce and lamdba expressions
 
