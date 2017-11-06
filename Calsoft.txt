@@ -1,0 +1,50 @@
+Calsoft First Interview round question and answer:
+What is diff between tuple and list
+real life example of tuple and list
+what is data structure in python
+what is the diff between range and xrange
+What is decorator
+What is generator. 
+command for watch current running all process.
+How to view all port status.   answer lsof -i
+Port number of ssh  answer is 22
+How to view some port status.
+
+
+
+Predit the output
+1.
+
+a=[1,2,3,4,5]
+b=a
+b.append(6)
+print a
+print b
+
+2.
+
+a=1,2,3,4
+print(type(a))
+
+
+
+
+Program 1:
+to print the every-word and its occurences from multi-line string.
+Program 2:
+Design decorator fucntion.
+
+
+
+
+
+Second round 
+
+what is SAN NAS
+write a function for addition of two number and return addition and write test scenarion on this function
+create dictionary by using 3 diff way.
+Explain Current role in Veritas in deatails.
+
+
+
+
