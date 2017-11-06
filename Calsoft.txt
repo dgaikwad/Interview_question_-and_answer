@@ -5,6 +5,7 @@ what is data structure in python
 what is the diff between range and xrange
 What is decorator
 What is generator. 
+What is MRO?
 command for watch current running all process.
 How to view all port status.   answer lsof -i
 Port number of ssh  answer is 22
