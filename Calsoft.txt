@@ -35,7 +35,9 @@ to print the every-word and its occurences from multi-line string.
 Program 2:
 Design decorator fucntion.
 
-
+Puzzle:
+If in a cricket match continuously 10 players got out (bold), which player will remain not out?
+Answer: 8th number player
 
 
 
