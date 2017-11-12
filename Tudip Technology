@@ -1,16 +1,14 @@
 Interview of Tudip Technology for Python Developer
 
-generator-done 
-pickle-done
-range and xrange-done
-marshelling/serialization Python means pickle functionality-done
-monkey patch-done
-Area of triangle -No
-50 % of 50 % 50-done
-70% of 90 -done
-x+(1/x)=5 then x^2+(1/x^2)=?  - No
-
-Inheritance concept.-done
-Polymorphism-done
-Can we write contructor as a private? No
-linux command of linux - done
+What is Generator?
+What is pickle module in Python?
+Diffrence between range and xrange?
+What is monkey patches?
+What is area of triangle?
+what is 50 % of 50 % 50?
+What is 70% of 90?
+x+(1/x)=5 then x^2+(1/x^2)=?
+Explain the Inheritance concept.
+Explain the Polymorphism?
+Can we write contructor as a private? 
+Basic linux command of linux.
