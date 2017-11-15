@@ -1,0 +1,82 @@
+
+GS lab Interview question For Python Developer
+
+Question 1)
+To print the pair from list which sum is k. 
+
+First Solution with complexity is n^2
+
+devi@devi-Vostro-1540:~$ cat ./find_sum_is_k2.py 
+#!/usr/bin/python3
+def foo(list1, sum):
+    for i in range(len(list1)):
+        for j in range(len(list1)):
+            if list1[i] + list1[j] == sum:
+                print(list1[i], list1[j])
+            
+    
+list1 = [1,2,5,3,2,6,4,2,1,1,2,3,6]
+foo(list1, 9)   
+devi@devi-Vostro-1540:~$ ./find_sum_is_k2.py 
+5 4
+3 6
+3 6
+6 3
+6 3
+4 5
+3 6
+3 6
+6 3
+6 3
+devi@devi-Vostro-1540:~$ 
+
+Second solution with time complexity is n.
+
+#!/usr/bin/python3
+
+def foo(list1, sum):
+    dummy_list = [0] * 99999
+    for i in list1:
+        value = sum - i
+        if value >=0 and dummy_list[value] == 1:
+            print(i, value)
+        dummy_list[i] = 1
+    
+
+list1 = [1,2,5,3,2,6,4,2,1,1,2,3,6]
+foo(list1, 9)
+        
+devi@devi-Vostro-1540:~$ ./find_sum_is_k1.py 
+6 3
+4 5
+3 6
+6 3
+devi@devi-Vostro-1540:~$ 
+
+
+Question 2) 
+
+To delete the dublicate element from list.
+
+
+    def remove_dublicate(self):
+        l1=[]
+        tmp=self.head
+        prev=None
+        while tmp != None:
+            if prev != None:
+                if tmp.data in l1: 
+                    d=tmp
+                    tmp=tmp.next
+                    prev.next=tmp
+                else:
+                    l1.append(tmp.data)
+                    prev=tmp
+                    tmp=tmp.next
+            elif prev == None:
+                prev=tmp
+                l1.append(tmp.data)
+                tmp=tmp.next
+
+
+
