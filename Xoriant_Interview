@@ -1,0 +1,187 @@
+
+Xoriant Python Automation telephonic Interview.
+
+
+1)Explain About Project and current role
+2)Question about current domain(SAN, NAS, DAS its protocol)
+3)Framework Flow.
+4)Explain the  private member and method in python. Is it really private?
+5)Can we access the private member and method outside world.
+6)What is Exception?
+7)What does the except block?
+8)Can we write finally and else block at a time?
+9)If I written the return statement in try block then finally block will execute or not.
+10) What is the purpose of "with" statement in file handling? Can we use the with keyword outside file handling?
+11) About Diff between REST and SOUP API
+12)RESTFul and rest API difference, is RESTful API is stateless or not?
+13)Class method and static method and instant method.
+14)What is a decorator?
+15)How to run process background.
+16)How to check current running process
+17)How to check parent process
+18)Can we execute file with execute permission
+19)How to set permission to file?
+20)What is Hypervisor
+21)What is the Virtual and Cloud storage(Need to provide answer here)
+
+
+
+Question with Answer:
+
+
+Que.4)Explain the  private member and method in python. Is it really private?
+Variable and method start with __ (double underscore) this mean private.
+
+Que. 5)Can we access the private member and method outside world.
+Answer:
+
+Yes. Actually this is only conversion in python but we can access this member and method from outside world by using some special syntax:
+
+objectname._classname__variablename
+objectname._classname__methodname()
+
+Que. 6)What is Exception?
+Answer:
+An exception is an event, which occurs during the execution of a program, that disrupts the normal flow of the program's instructions.
+
+Que. 7) What does the except block?
+Answer:
+except is such block in which we can handle the appropriate exception based on the exception type.
+
+Que. 8)Can we write finally and else block at a time?
+Answer:
+Yes. We can write finally and else statement at a time.
+
+9)If I written the return statement in try block then finally block will execute or not.
+
+Answer:
+Yes. Finally block will execute before the return statement and then return statement will execute
+Example:
+
+devi@devi-Vostro-1540:~/hw$ cat ./ex.py
+#!/usr/bin/python3
+
+def fun():
+    try:
+        print("try statement before return.")
+        return True
+        print("try statement after return.")
+    except:
+        pass
+    finally:
+        print("Finally")
+
+print("Before the function call.")
+print(fun())
+print("After the function call")
+
+devi@devi-Vostro-1540:~/hw$ ./ex.py
+Before the function call.
+try statement before return.
+Finally
+True
+After the function call
+devi@devi-Vostro-1540:~/hw$
+
+Que. 10) What is the purpose of "with" statement in file handling? Can we use the with keyword outside file handling?                            Answer:
+Using with keyword we can open a file and python internally close the file at end of scope of with keyword.
+We can not use with keyword outside file handling.
+
+Que 11) What is difference between SOAP and REST API.
+Answer:
+
+Difference between Rest and Soap
+
+SOAP
+
+    SOAP is a protocol.
+    SOAP stands for Simple Object Access Protocol.
+    SOAP can't use REST because it is a protocol.
+    SOAP uses services interfaces to expose the business logic.
+    SOAP defines standards to be strictly followed.
+    SOAP requires more bandwidth and resource than REST.
+    SOAP defines its own security.
+    SOAP permits XML data format only.
+    SOAP is less preferred than REST.
+
+REST
+
+    REST is an architectural style.
+    REST stands for Representational State Transfer.
+    REST can use SOAP web services because it is a concept and can use any protocol like HTTP, SOAP.
+    REST uses URI to expose business logic.
+    REST does not define too much standards like SOAP.
+    REST requires less bandwidth and resource than SOAP.
+    RESTful web services inherits security measures from the underlying transport.
+    REST permits different data format such as Plain text, HTML, XML, JSON etc.
+    REST more preferred than SOAP.
+
+
+
+Que. 12)RESTFul and rest API difference, is RESTful API is stateless or not?
+RESTful is stateless and RESTless is stateful.
+
+
+Que. 13) Explain Class method and static method and instant method.
+
+
+Static Methods:
+
+    Simple functions with no self argument.
+    Work on class attributes; not on instance attributes.
+    Can be called through both class and instance.
+    The built-in function staticmethod()is used to create them.
+
+Benefits of Static Methods:
+
+    It localizes the function name in the classscope
+    It moves the function code closer to where it is used
+
+    More convenient to import versus module-level functions since each method does not have to be specially imported
+
+    @staticmethod
+    def some_static_method(*args, **kwds):
+        pass
+
+Class Methods:
+
+    Functions that have first argument as classname.
+    Can be called through both class and instance.
+
+    These are created with classmethod in-built function.
+
+     @classmethod
+     def some_class_method(cls, *args, **kwds):
+         pass
+
+Que.14)What is decorater?
+Answer:
+It provides a very useful way to add additional functionality to existing functions and classes. They are functions that wrap other functions or classes.
+In simple terms it is a way to dynamically add new behavior to some objects.
+
+
+Que.15) How to run process backgroundly?
+Answer:
+To run a process in the background, include an & (an ampersand) at the end of the command you use to run the job.
+
+16)How to check current running process?
+Answer: ps -ef command
+
+17)How to check parent process?
+By executing ps -axvf  command. It will give output in tree hierarchy.
+
+18)Can we execute file with execute permission?
+Answer:  No
+
+
+19)How to set permission to file?
+Answer:
+chmod user_group_other file_name
+Eg. chmod 777 /abc.txt
+
+
+20)What is Hypervisor?
+Answer:
+Hypervisor is such application using that we can create multiple OS on base hardware. Example Hyper-V, ESX, Oracle Box.
+
+Que. 21)What is the difference Virtual storage and Cloud storage.
