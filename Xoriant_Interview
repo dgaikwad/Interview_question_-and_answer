@@ -50,7 +50,32 @@ except is such block in which we can handle the appropriate exception based on t
 
 Que. 8)Can we write finally and else block at a time?
 Answer:
+
 Yes. We can write finally and else statement at a time.
+def foo():
+  try:
+    print("try")
+    
+    print("end try")
+  except Exception as exp:
+    print("Exp")
+  else:
+    print("Else block")
+  finally:
+    print("finally")
+
+foo()
+
+
+output:
+Python 3.7.4 (default, Jul  9 2019, 00:06:43)
+[GCC 6.3.0 20170516] on linux
+try
+end try
+Else block
+finally
+
+
 
 9)If I written the return statement in try block then finally block will execute or not.
 
@@ -84,6 +109,7 @@ After the function call
 devi@devi-Vostro-1540:~/hw$
 
 Que. 10) What is the purpose of "with" statement in file handling? Can we use the with keyword outside file handling?                            Answer:
+Answer:
 Using with keyword we can open a file and python internally close the file at end of scope of with keyword.
 We can not use with keyword outside file handling.
 
